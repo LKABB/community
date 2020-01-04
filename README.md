@@ -25,3 +25,18 @@ CREATE TABLE `user` (
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8
 '''
+'''sql
+CREATE TABLE `question` (
+  `id` int(20) NOT NULL AUTO_INCREMENT,
+  `title` varchar(50) DEFAULT NULL,
+  `description` text,
+  `gmt_create` bigint(50) DEFAULT NULL,
+  `gmt_modified` bigint(50) DEFAULT NULL,
+  `creator` int(20) DEFAULT NULL,
+  `comment_count` int(20) DEFAULT '0',
+  `view_count` int(20) DEFAULT '0',
+  `like_count` int(20) DEFAULT '0',
+  `tag` varchar(255) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8
+'''
