@@ -12,3 +12,16 @@
 ##工具
 [Git](https://git-scm.com/download)
 [Visual Paradigm](https://www.visual-paradigm.com)
+
+##脚本
+'''sql
+CREATE TABLE `user` (
+  `id` int(20) NOT NULL AUTO_INCREMENT,
+  `account_id` varchar(100) DEFAULT NULL,
+  `name` varchar(100) DEFAULT NULL,
+  `token` varchar(100) DEFAULT NULL,
+  `gmt_create` bigint(50) DEFAULT NULL,
+  `gmt_modified` bigint(50) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8
+'''
